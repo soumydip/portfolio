@@ -14,7 +14,7 @@ export default function NpmSection() {
   };
 
   return (
-    <section id="npm" className="py-12 bg-slate-50 dark:bg-slate-950">
+    <section id="npm" className="py-12 bg-slate-50 dark:bg-slate-950 p-8">
       <div className="text-center mb-16 mx-auto max-w-4xl">
         <motion.h2
           initial={{ opacity: 0, y: 15 }}

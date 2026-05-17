@@ -11,6 +11,7 @@ import {
   Mail,
   ArrowUpRight,
 } from "lucide-react";
+import { ContactForm } from "./contactFrom";
 
 const socialLinks = [
   {
@@ -50,6 +51,8 @@ const socialLinks = [
     color: "hover:text-blue-700 dark:hover:text-blue-500",
   }
 ];
+
+
 
 export default function Contact() {
   return (
@@ -100,6 +103,7 @@ export default function Contact() {
           ))}
         </div>
       </div>
+      <ContactForm/>
     </section>
   );
 }

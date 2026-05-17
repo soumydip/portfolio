@@ -16,7 +16,7 @@ import Image from "next/image";
 import UcoderImage from "../public/project/ucoder.png";
 import ucoderInsightsImage from "../public/project/ucoder_insights.png";
 import placMentPredictionImage from "../public/project/placement.png";
-
+import Portfolio from "../public/project/portfolio.png";
 const projects = [
   {
     title: "Ucoder Insights",
@@ -24,11 +24,19 @@ const projects = [
       "Production-grade analytics platform with custom SDKs to track " +
       "real-time traffic, errors and events. Handles high-throughput " +
       "data ingestion via BullMQ job queues with Redis caching.",
-    tech: ["Next.js", "TypeScript", "Node.js", "BullMQ",
-           "Redis", "MongoDB", "Docker", "PM2"],
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "BullMQ",
+      "Redis",
+      "MongoDB",
+      "Docker",
+      "PM2",
+    ],
     github: "https://github.com/soumydip/ucoder_insight_core",
-    live:   "https://insights.ucoder.in",
-    image:  ucoderInsightsImage,
+    live: "https://insights.ucoder.in",
+    image: ucoderInsightsImage,
   },
   {
     title: "Ucoder",
@@ -37,8 +45,25 @@ const projects = [
       "containerized deployment on Linux VPS with Docker.",
     tech: ["Express", "Vite", "MongoDB", "Tailwind CSS", "Docker"],
     github: "",
-    live:   "https://www.ucoder.in",
-    image:  UcoderImage,
+    live: "https://www.ucoder.in",
+    image: UcoderImage,
+  },
+  {
+    title: "Personal Portfolio",
+    description:
+      "Modern portfolio website built with Next.js and Tailwind CSS, " +
+      "showcasing projects and skills with responsive design.",
+    tech: [
+      "React",
+      "Lucide Icons",
+      "Tailwind CSS",
+      "Framer Motion",
+      "TypeScript",
+      "Vercel",
+    ],
+    github: "https://github.com/soumydip/portfolio",
+    live: "https://soumydip.ucoder.in",
+    image: Portfolio,
   },
   {
     title: "Placement Prediction",
@@ -47,8 +72,8 @@ const projects = [
       "using Random Forest classifier with 89% accuracy.",
     tech: ["Python", "Flask", "Pandas", "Scikit-learn", "Random Forest"],
     github: "https://github.com/soumydip/placement_prediction",
-    live:   "https://placement-prediction-u7v7.onrender.com",
-    image:  placMentPredictionImage,
+    live: "https://placement-prediction-u7v7.onrender.com",
+    image: placMentPredictionImage,
   },
   {
     title: "Breast Cancer Detection",
@@ -57,10 +82,10 @@ const projects = [
       "achieving high accuracy on clinical datasets.",
     tech: ["Python", "Pandas", "Scikit-learn", "Random Forest"],
     github: "https://github.com/soumydip/Breast_Cancer_Prediction",
-    live:   "",
-    image:  "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
+    live: "",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
   },
-]
+];
 export default function StackedProjects() {
   const [index, setIndex] = useState(0);
 
@@ -160,7 +185,7 @@ export default function StackedProjects() {
                           {project.title}
                         </h3>
                         <div className="flex flex-wrap gap-1.5 md:gap-2">
-                          {project.tech.slice(0, 5).map((t, idx) => (
+                          {project.tech.map((t, idx) => (
                             <Badge
                               key={idx}
                               className="bg-white/20 backdrop-blur-md text-white border-none px-2.5 py-1 text-[9px] md:text-xs"

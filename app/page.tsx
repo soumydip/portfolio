@@ -29,12 +29,17 @@ const Npm = dynamic(() => import("@/components/NpmSection"), {
   ssr: true,
 });
 
+const GitState = dynamic(() => import("@/components/GitState"), {
+  ssr: true,
+});
+
 export default function Page() {
   return (
     <main className="relative">
       <Navbar />
       <Home />
       <About />
+      <GitState />
       <Skills />
       <Achievements />
       <Npm />
