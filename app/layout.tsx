@@ -34,11 +34,9 @@ export const metadata: Metadata = {
     "Soumyadip Maity",
     "Full Stack Developer",
     "MERN Stack Developer",
-
     "Web Developer Kolkata",
     "Full Stack Developer India",
     "Developer West Bengal",
-
     "React Developer",
     "Next.js Developer",
     "Node.js Developer",
@@ -62,8 +60,13 @@ export const metadata: Metadata = {
 
   category: "Technology",
   classification: "Portfolio Website",
+  
+
   verification: {
     google: "HYXriKdykPP32qy8gCqvx2KmooO1bm2eJusZn9YilmM",
+    other: {
+      me: ["msvalidate.01=63ED4C20ECAC42E69729460CD00EBD3F"],
+    },
   },
 
   robots: {
@@ -91,7 +94,6 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   openGraph: {
     title: "Soumyadip Maity | Full Stack Developer",
-
     description:
       "Crafting scalable web applications with MERN Stack, Next.js & Typescript.",
     url: "https://soumyadip.ucoder.in/",
