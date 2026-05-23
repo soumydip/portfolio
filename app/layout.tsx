@@ -60,12 +60,11 @@ export const metadata: Metadata = {
 
   category: "Technology",
   classification: "Portfolio Website",
-  
 
   verification: {
     google: "HYXriKdykPP32qy8gCqvx2KmooO1bm2eJusZn9YilmM",
     other: {
-      me: ["msvalidate.01=63ED4C20ECAC42E69729460CD00EBD3F"],
+      "msvalidate.01": ["63ED4C20ECAC42E69729460CD00EBD3F"],
     },
   },
 
