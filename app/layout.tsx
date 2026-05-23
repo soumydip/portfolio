@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     },
   },
 
-  alternates: { canonical: "https://soumyadip.ucoder.in/" },
+  alternates: { canonical: "/" },
 
   icons: {
     icon: [
