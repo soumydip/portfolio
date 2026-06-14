@@ -47,11 +47,7 @@ const skills = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     desc: "Powering server-side applications with fast, scalable execution.",
   },
-  {
-    name: "Express.js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-    desc: "Creating robust REST APIs and back-end services with minimal overhead.",
-  },
+
 
   // Databases
   {
@@ -76,11 +72,7 @@ const skills = [
   },
 
   // Infrastructure
-  {
-    name: "Docker",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-    desc: "Containerizing applications for consistent environments and easy deployment.",
-  },
+
   {
     name: "BullMQ",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
@@ -96,16 +88,6 @@ const skills = [
     name: "Git & GitHub",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
     desc: "Version control and collaborative development through industry standards.",
-  },
-  {
-    name: "Postman",
-    logo: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-    desc: "Testing and documenting REST APIs to ensure seamless integration.",
-  },
-  {
-    name: "VS Code",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-    desc: "Efficient code editing with powerful extensions and integrated tools.",
   },
 ];
 

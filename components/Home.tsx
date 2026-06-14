@@ -22,9 +22,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-purple-600 font-bold tracking-[0.15em] md:tracking-[0.2em] uppercase text-[10px] xs:text-xs md:text-sm mb-4">
-              Building the Future of Web
-            </h2>
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black text-slate-900 dark:text-white leading-[1.1] md:leading-[1.1] lg:leading-[0.9] mb-6">
               FULL STACK <br />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-600 to-blue-500">
@@ -39,12 +36,9 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="text-sm sm:text-base md:text-xl text-slate-500 dark:text-slate-400 max-w-lg mx-auto lg:mx-0 mb-8 md:mb-10 leading-relaxed font-medium"
           >
-            I&apos;m{" "}
-            <span className="text-slate-900 dark:text-white underline decoration-purple-500/30 underline-offset-4 font-bold">
-              Soumyadip
-            </span>
-            , Specializing in MERN & TypeScript to craft scalable web
-            applications and AI solutions.
+            I build
+            <span className="text-purple-600 font-bold  ml-1">Production-grade</span> web apps — analytics SDKs, real-time systems &
+            open-source tools.
           </motion.p>
           <div className="flex flex-row items-center justify-center lg:justify-start gap-6">
             <motion.div

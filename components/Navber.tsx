@@ -90,8 +90,6 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, [mounted]);
 
-  if (!mounted) return null;
-
   return (
     <>
       <motion.nav
@@ -156,14 +154,20 @@ export default function Navbar() {
               }
               className="rounded-lg p-2 text-slate-900 dark:text-white flex items-center gap-2"
             >
-              {resolvedTheme === "dark" ? (
-                <Sun size={18} />
+              {mounted ? (
+                resolvedTheme === "dark" ? (
+                  <Sun size={18} />
+                ) : (
+                  <MoonStar size={18} />
+                )
               ) : (
-                <MoonStar size={18} />
+                <div className="w-[18px] h-[18px]" />
               )}
-              <span className="text-xs font-semibold hidden sm:block uppercase tracking-wider">
-                {resolvedTheme === "dark" ? "Light" : "Dark"}
-              </span>
+              {mounted && (
+                <span className="text-xs font-semibold hidden sm:block uppercase tracking-wider">
+                  {resolvedTheme === "dark" ? "Light" : "Dark"}
+                </span>
+              )}
             </button>
 
             <button

@@ -35,7 +35,7 @@ const GitState = dynamic(() => import("@/components/GitState"), {
 
 export default function Page() {
   return (
-    <main className="relative">
+    <main className="relative overflow-x-hidden">
       <Navbar />
       <Home />
       <About />

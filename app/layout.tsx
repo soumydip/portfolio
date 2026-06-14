@@ -65,6 +65,7 @@ export const metadata: Metadata = {
     google: "HYXriKdykPP32qy8gCqvx2KmooO1bm2eJusZn9YilmM",
     other: {
       "msvalidate.01": ["63ED4C20ECAC42E69729460CD00EBD3F"],
+      "ucoder-insights-id": "ZKCfzaBw5ywu86ww",
     },
   },
 
@@ -129,12 +130,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className="scroll-smooth overflow-x-hidden"
+    >
       <head>
         <StructuredData />
       </head>
       <body
-        className={`${inter.className} antialiased selection:bg-purple-500/30 selection:text-purple-600 dark:selection:text-purple-400`}
+        className={`${inter.className} antialiased selection:bg-purple-500/30 selection:text-purple-600 dark:selection:text-purple-400 overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"

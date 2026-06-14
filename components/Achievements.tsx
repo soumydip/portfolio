@@ -6,11 +6,18 @@ import { Award, Image as ImageIcon, ExternalLink } from "lucide-react";
 
 const certificates = [
   {
-    title: "Python Programming Training",
-    issuer: "Academy of Skill Development",
-    date: "Dec 2023",
-    image: "/certificates/python.jpeg",
-    credentialId: "ASDF/PYT/SWA/A+/47677",
+    title: "Pograimg with Java",
+    issuer: "NPTEL",
+    date: "Apr 2026",
+    image: "/certificates/java.png",
+    credentialId: "NPTEL26CS36S757500177",
+  },
+  {
+    title: "Web3 Hackathon",
+    issuer: "IEM-IIFR, Kolkata, Google Developer Group",
+    date: "March 2026",
+    image: "/certificates/web3.jpg",
+    credentialId: null,
   },
   {
     title: "Design & Analysis of Algorithms",
@@ -25,6 +32,13 @@ const certificates = [
     date: "July 2024",
     image: "/certificates/react.jpeg",
     credentialId: "ARDENT/131991",
+  },
+  {
+    title: "Python Programming Training",
+    issuer: "Academy of Skill Development",
+    date: "Dec 2023",
+    image: "/certificates/python.jpeg",
+    credentialId: "ASDF/PYT/SWA/A+/47677",
   },
 ];
 
@@ -86,7 +100,7 @@ export default function Achievements() {
 
               <div className="mt-6 pt-6 border-t border-slate-100 dark:border-slate-800">
                 <p className="text-[10px] text-slate-400 dark:text-slate-600 uppercase font-bold tracking-tighter mb-4">
-                  ID: {cert.credentialId}
+                  {cert.credentialId ? `ID: ${cert.credentialId}` : null}
                 </p>
 
                 <a

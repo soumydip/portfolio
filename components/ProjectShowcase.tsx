@@ -100,9 +100,9 @@ export default function StackedProjects() {
 
   return (
     <section
-      id="projects"
-      className="py-20 px-4 dark:bg-slate-950 overflow-hidden transition-all duration-500"
-    >
+  id="projects"
+  className="py-20 px-4 dark:bg-slate-950 overflow-hidden transition-all duration-500 max-w-full"
+>
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <div className="text-center mb-12 md:mb-16">
           <motion.h2
@@ -126,7 +126,7 @@ export default function StackedProjects() {
             projects.
           </p>
         </motion.div>
-        <div className="relative w-full flex items-center justify-center h-130 md:h-150">
+        <div className="relative w-full flex items-center justify-center h-[520px] md:h-[600px]">
           <button
             onClick={prevStep}
             className="absolute left-0 md:left-4 z-50 p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 dark:text-white text-slate-800 hover:bg-purple-600 hover:text-white transition-all hidden sm:flex shadow-2xl"
@@ -134,7 +134,7 @@ export default function StackedProjects() {
             <ChevronLeft size={28} />
           </button>
 
-          <div className="relative w-full max-w-300 h-full flex items-center justify-center">
+          <div className="relative w-full max-w-full h-full flex items-center justify-center">
             <AnimatePresence initial={false}>
               {projects.map((project, i) => {
                 const isCenter = i === index;

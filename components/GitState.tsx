@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { GitPullRequest, Activity, Code2 } from "lucide-react";
@@ -45,7 +46,7 @@ export default function GitHubSection() {
           </CardHeader>
           <CardContent className="p-0 flex justify-center">
             <img
-              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=transparent&hide_border=true&langs_count=8&title_color=6366f1&text_color=a1a1aa`}
+              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=transparent&hide_border=true&langs_count=6&title_color=6366f1&text_color=a1a1aa`}
               alt="Top Languages"
               className="w-full max-w-lg"
               loading="lazy"

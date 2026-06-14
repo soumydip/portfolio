@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -36,7 +37,6 @@ export default function About() {
           viewport={{ once: true }}
           className="space-y-8"
         >
-          {/* Para 1 */}
           <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
             My journey into web development started with curiosity about how
             digital systems work. Over time, that curiosity evolved into a focus
@@ -55,7 +55,6 @@ export default function About() {
             .
           </p>
 
-          {/* Para 2 */}
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
             I focus on clean architecture and scalability — working with
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
@@ -71,12 +70,16 @@ export default function About() {
             </span>
             for real-world backend systems. I&#39;ve shipped apps to production,
             including
-            <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
-              Ucoder
+            <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400 hover:underline ">
+              <Link href="https://www.ucoder.in" target="_blank">
+                Ucoder
+              </Link>
             </span>
             and
-            <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
-              Ucoder Insights
+            <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400 hover:underline ">
+              <Link href="https://insights.ucoder.in" target="_blank">
+                Ucoder Insights
+              </Link>
             </span>
             — an analytics platform with its own
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
@@ -96,24 +99,23 @@ export default function About() {
           {/* Para 3 */}
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
             Beyond coding, I enjoy exploring new infrastructure patterns and
-            contributing to open-source. I&#39;m currently working on a
-            large-scale platform that involves
+            contributing to open-source. I&#39;m actively maintaining
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
-              HLS video streaming
+              Ucoder Insights
+            </span>
+            in production — recently shipping
+            <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
+              rage click detection
             </span>
             ,
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
-              WebRTC real-time systems
-            </span>
-            ,
-            <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
-              job queues
+              AI crawler tracking
             </span>
             and
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
-              multi-role access control
+              bot detection
             </span>
-            — pushing my skills into production infrastructure.
+            — because building is never really done.
           </p>
         </motion.div>
       </div>

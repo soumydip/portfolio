@@ -33,23 +33,11 @@ const socialLinks = [
     color: "hover:text-sky-500 dark:hover:text-sky-400",
   },
   {
-    name: "Instagram",
-    icon: <Instagram size={20} />,
-    link: "https://www.instagram.com/soumyadip2912/",
-    color: "hover:text-pink-500 dark:hover:text-pink-400",
-  },
-  {
     name: "Email",
     icon: <Mail size={20} />,
     link: "mailto:maitysoumyadip22@gmail.com",
     color: "hover:text-purple-600 dark:hover:text-purple-400",
   },
-  {
-    name: "Facebook",
-    icon: <Facebook size={20} />,
-    link: "https://www.facebook.com/share/17ZUJY8DMC/",
-    color: "hover:text-blue-700 dark:hover:text-blue-500",
-  }
 ];
 
 
@@ -76,7 +64,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-12 gap-x-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-12 gap-x-6">
           {socialLinks.map((social, i) => (
             <motion.a
               key={i}
