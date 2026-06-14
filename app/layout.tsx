@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { StructuredData } from "@/components/JsonLTD";
-
+import Analytics from "@/components/analysis";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -147,6 +147,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Analytics />
           {children}
         </ThemeProvider>
       </body>
