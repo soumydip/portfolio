@@ -43,7 +43,7 @@ export async function sendContact(
   try {
     // Send to Formspree
     const res = await fetch(
-      `https://formspree.io/f/${process.env.FORMSPREE_ID}`,
+      `https://formspree.io/f/xbdbrvbd`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
