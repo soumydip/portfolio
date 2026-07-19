@@ -9,7 +9,7 @@ export default function GitHubSection() {
   const USERNAME = "soumydip";
 
   return (
-    <section className="py-20 px-4 bg-slate-950" id="github">
+    <section className="py-20 px-4 bg-slate-950/20" id="github">
       <div className="max-w-6xl mx-auto">
 
         {/* ── Header ── */}
@@ -37,7 +37,7 @@ export default function GitHubSection() {
         </Card>
 
         {/* ── 2. Top Languages ── */}
-        <Card className="bg-slate-900 border-slate-800 p-4 mb-6 hover:border-primary/50 transition-all duration-300">
+        <Card className="bg-slate-900 border-slate-950 p-4 mb-6 hover:border-primary/50 transition-all duration-300">
           <CardHeader className="px-2 pt-2 pb-4">
             <CardTitle className="text-base font-medium text-muted-foreground flex items-center gap-2">
               <Code2 className="w-4 h-4 text-primary" />

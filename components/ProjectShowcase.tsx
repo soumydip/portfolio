@@ -44,7 +44,7 @@ const projects = [
       "Full-stack service platform with real-time features, " +
       "containerized deployment on Linux VPS with Docker.",
     tech: ["Express", "Vite", "MongoDB", "Tailwind CSS", "Docker"],
-    github: "",
+    github: "https://github.com/soumydip/ucoder_official",
     live: "https://www.ucoder.in",
     image: UcoderImage,
   },

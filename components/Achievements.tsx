@@ -6,7 +6,7 @@ import { Award, Image as ImageIcon, ExternalLink } from "lucide-react";
 
 const certificates = [
   {
-    title: "Pograimg with Java",
+    title: "Programming with Java",
     issuer: "NPTEL",
     date: "Apr 2026",
     image: "/certificates/java.png",
@@ -46,7 +46,7 @@ export default function Achievements() {
   return (
     <section
       id="skills"
-      className="py-24 px-6 bg-slate-50 dark:bg-slate-950/50 transition-colors duration-300"
+      className="py-24 px-6 bg-slate-50 dark:bg-slate-950 transition-colors duration-300"
     >
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}

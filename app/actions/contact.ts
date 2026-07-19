@@ -41,17 +41,41 @@ export async function sendContact(
   }
 
   try {
-    // Send to Formspree
-    const res = await fetch(
-      `https://formspree.io/f/xbdbrvbd`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
-      }
-    );
+    const res = await fetch("https://api.brevo.com/v3/smtp/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "api-key": process.env.BREVO_API_KEY as string,
+      },
+      body: JSON.stringify({
+        sender: {
+          name: "Soumyadip Maity portfolio",
+          email: process.env.BREVO_SENDER_EMAIL,
+        },
+        to: [
+          {
+            email: "maitysoumyadip22@gmail.com",
+            name: "Soumyadip",
+          },
+        ],
+        replyTo: {
+          email: email,
+          name: name,
+        },
+        subject: `New portfolio message from ${name}`,
+        htmlContent: `
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Message:</strong></p>
+          <p>${message.replace(/\n/g, "<br>")}</p>
+        `,
+      }),
+    });
 
     if (!res.ok) {
+      const errorData = await res.json().catch(() => null);
+      console.error("Brevo API error:", errorData);
       return {
         success: false,
         message: "Something went wrong. Please try again.",
@@ -63,6 +87,7 @@ export async function sendContact(
       message: "Message sent! I'll get back to you soon.",
     };
   } catch (error) {
+    console.error("Server error:", error);
     return {
       success: false,
       message: "Server error occurred.",

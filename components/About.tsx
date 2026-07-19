@@ -71,13 +71,13 @@ export default function About() {
             for real-world backend systems. I&#39;ve shipped apps to production,
             including
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400 hover:underline ">
-              <Link href="https://www.ucoder.in" target="_blank">
+              <Link href="https://www.ucoder.in?utm_source=soumyadip_portfoilo&utm_medium=referral" target="_blank">
                 Ucoder
               </Link>
             </span>
             and
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400 hover:underline ">
-              <Link href="https://insights.ucoder.in" target="_blank">
+              <Link href="https://insights.ucoder.in?utm_source=soumyadip_portfoilo&utm_medium=referral" target="_blank">
                 Ucoder Insights
               </Link>
             </span>
