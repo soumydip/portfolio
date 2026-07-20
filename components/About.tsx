@@ -22,7 +22,7 @@ export default function About() {
             <span className="text-purple-600 dark:text-purple-500 mx-2">
               Me
             </span>
-            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 w-1/2 bg-purple-500 rounded-full transition-all duration-500 group-hover:w-full" />
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 w-1/2 bg-purple-500 rounded transition-all duration-500 group-hover:w-full" />
           </h2>
           <p className="mt-4 text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
             I build modern web systems that balance performance, simplicity and
@@ -89,7 +89,7 @@ export default function About() {
           </p>
 
           {/* Quote */}
-          <div className="rounded-xl border border-slate-200/60 dark:border-slate-800 bg-gray-300/50 dark:bg-slate-900/50 backdrop-blur-md px-6 py-5">
+          <div className="rounded border border-slate-200/60 dark:border-slate-800 bg-gray-300/50 dark:bg-slate-900/50 backdrop-blur-md px-6 py-5">
             <p className="text-slate-700 dark:text-slate-300 italic leading-relaxed">
               &#34;I believe great software is built when clarity, performance
               and simplicity come together.&#34;

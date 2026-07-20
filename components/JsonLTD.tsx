@@ -54,7 +54,7 @@ export function StructuredData() {
         addressRegion: "West Bengal",
         addressCountry: "IN",
       },
-      email: "mailto:maitysoumyadip22@gmail.com",
+      email: "maitysoumyadip22@gmail.com",
       gender: "Male",
       nationality: "Indian",
     },

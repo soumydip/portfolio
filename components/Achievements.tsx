@@ -54,7 +54,7 @@ export default function Achievements() {
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="p-3 bg-purple-500/10 rounded-2xl mb-4"
+            className="p-3 bg-purple-500/10 rounded mb-4"
           >
             <Award className="text-purple-500" size={32} />
           </motion.div>
@@ -76,11 +76,11 @@ export default function Achievements() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group relative p-8 rounded-[2rem] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-purple-500/50 transition-all duration-500 flex flex-col h-full"
+              className="group relative p-8 rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-purple-500/50 transition-all duration-500 flex flex-col h-full"
             >
               {/* Date Badge */}
               <div className="mb-6">
-                <span className="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-[10px] font-bold text-purple-600 dark:text-purple-400 uppercase tracking-widest">
+                <span className="px-3 py-1 rounded bg-purple-100 dark:bg-purple-900/30 text-[10px] font-bold text-purple-600 dark:text-purple-400 uppercase tracking-widest">
                   {cert.date}
                 </span>
               </div>

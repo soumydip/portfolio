@@ -112,13 +112,13 @@ export default function StackedProjects() {
             className="text-4xl font-bold text-slate-900 dark:text-white relative group cursor-default mb-6"
           >
             Featured <span className="text-purple-600">Project</span>
-            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-0.75 w-1/2 bg-purple-500 rounded-full transition-all duration-500 group-hover:w-full" />
+            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-0.75 w-1/2 bg-purple-500 rounded transition-all duration-500 group-hover:w-full" />
           </motion.h2>
         </div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="mb-12 max-w-xl flex items-center gap-4 p-4 rounded-3xl bg-slate-100/50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800"
+          className="mb-12 max-w-xl flex items-center gap-4 p-4 rounded bg-slate-100/50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800"
         >
           <Info size={18} className="text-purple-500 shrink-0" />
           <p className="text-[10px] md:text-xs text-slate-500">
@@ -129,7 +129,7 @@ export default function StackedProjects() {
         <div className="relative w-full flex items-center justify-center h-[520px] md:h-[600px]">
           <button
             onClick={prevStep}
-            className="absolute left-0 md:left-4 z-50 p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 dark:text-white text-slate-800 hover:bg-purple-600 hover:text-white transition-all hidden sm:flex shadow-2xl"
+            className="absolute left-0 md:left-4 z-50 p-3 rounded bg-white/10 backdrop-blur-md border border-white/20 dark:text-white text-slate-800 hover:bg-purple-600 hover:text-white transition-all hidden sm:flex shadow-2xl"
           >
             <ChevronLeft size={28} />
           </button>
@@ -167,7 +167,7 @@ export default function StackedProjects() {
                       if (info.offset.x > 80) prevStep();
                       else if (info.offset.x < -80) nextStep();
                     }}
-                    className={`absolute w-[92%] md:w-[72%] h-full rounded-[40px] border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl overflow-hidden flex flex-col ${
+                    className={`absolute w-[92%] md:w-[72%] h-full rounded border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl overflow-hidden flex flex-col ${
                       isCenter
                         ? "cursor-default"
                         : "cursor-pointer hover:opacity-60"
@@ -211,7 +211,7 @@ export default function StackedProjects() {
                           <Button
                             variant="outline"
                             size="lg"
-                            className="flex-1 rounded-2xl md:py-7 border-slate-200 dark:border-slate-700 h-10 md:h-12 text-xs md:text-sm"
+                            className="flex-1 rounded md:py-7 border-slate-200 dark:border-slate-700 h-10 md:h-12 text-xs md:text-sm"
                             asChild
                           >
                             <a
@@ -227,7 +227,7 @@ export default function StackedProjects() {
                             disabled
                             size="lg"
                             variant="outline"
-                            className="flex-1 rounded-2xl opacity-50 h-10 md:h-12 text-xs md:text-sm bg-slate-50 dark:bg-slate-800"
+                            className="flex-1 rounded opacity-50 h-10 md:h-12 text-xs md:text-sm bg-slate-50 dark:bg-slate-800"
                           >
                             <Lock size={14} className="mr-2" /> Private
                           </Button>
@@ -236,7 +236,7 @@ export default function StackedProjects() {
                         {project.live ? (
                           <Button
                             size="lg"
-                            className="flex-1 bg-purple-600 text-white rounded-2xl shadow-xl hover:bg-purple-700 h-10 md:h-12 text-xs md:text-sm"
+                            className="flex-1 bg-purple-600 text-white rounded shadow-xl hover:bg-purple-700 h-10 md:h-12 text-xs md:text-sm"
                             asChild
                           >
                             <a
@@ -252,7 +252,7 @@ export default function StackedProjects() {
                             disabled
                             size="lg"
                             variant="outline"
-                            className="flex-1 rounded-2xl opacity-50 h-10 md:h-12 text-xs md:text-sm bg-slate-50 dark:bg-slate-800"
+                            className="flex-1 rounded opacity-50 h-10 md:h-12 text-xs md:text-sm bg-slate-50 dark:bg-slate-800"
                           >
                             <Lock size={14} className="mr-2" /> No Demo
                           </Button>
@@ -267,7 +267,7 @@ export default function StackedProjects() {
 
           <button
             onClick={nextStep}
-            className="absolute right-0 md:right-4 z-50 p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 dark:text-white text-slate-800 hover:bg-purple-600 hover:text-white transition-all hidden sm:flex shadow-2xl"
+            className="absolute right-0 md:right-4 z-50 p-3 rounded bg-white/10 backdrop-blur-md border border-white/20 dark:text-white text-slate-800 hover:bg-purple-600 hover:text-white transition-all hidden sm:flex shadow-2xl"
           >
             <ChevronRight size={28} />
           </button>
@@ -283,7 +283,7 @@ export default function StackedProjects() {
                 width: i === index ? 40 : 12,
                 backgroundColor: i === index ? "#9333ea" : "#cbd5e1",
               }}
-              className="h-3 rounded-full transition-all duration-300"
+              className="h-3 rounded transition-all duration-300"
             />
           ))}
         </div>

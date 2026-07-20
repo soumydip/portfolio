@@ -9,7 +9,7 @@ export default function GitHubSection() {
   const USERNAME = "soumydip";
 
   return (
-    <section className="py-20 px-4 bg-slate-950/20" id="github">
+    <section className="py-20 px-4 bg-slate-950" id="github">
       <div className="max-w-6xl mx-auto">
 
         {/* ── Header ── */}
@@ -66,7 +66,7 @@ export default function GitHubSection() {
             <img
               src={`https://github-readme-activity-graph.vercel.app/graph?username=${USERNAME}&theme=react-dark&hide_border=true&bg_color=transparent&color=6366f1&line=6366f1&point=f59e0b&area=true&area_color=6366f130`}
               alt="Contribution Graph"
-              className="w-full rounded-lg"
+              className="w-full rounded"
               loading="lazy"
             />
           </CardContent>
@@ -78,7 +78,7 @@ export default function GitHubSection() {
             href={`https://github.com/${USERNAME}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-slate-800 bg-slate-900 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 text-sm font-medium"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded border border-slate-800 bg-slate-900 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 text-sm font-medium"
           >
             <GitPullRequest className="w-4 h-4" />
             View Full GitHub Profile →

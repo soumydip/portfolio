@@ -124,7 +124,7 @@ export default function Navbar() {
                     <motion.span
                       initial={false}
                       whileHover={{ opacity: 1, scale: 1 }}
-                      className="absolute inset-0 -z-10 bg-purple-500/15 rounded-full opacity-0 scale-75 transition-all"
+                      className="absolute inset-0 -z-10 bg-purple-500/15 rounded opacity-0 scale-75 transition-all"
                       style={{ padding: "8px 16px", margin: "-8px -16px" }}
                     />
                     {item.name}
@@ -133,7 +133,7 @@ export default function Navbar() {
                   {active === item.name && (
                     <motion.span
                       layoutId="activeNavIndicator"
-                      className="absolute -bottom-1 h-1 w-1/2 rounded-full bg-purple-500"
+                      className="absolute -bottom-1 h-1 w-1/2 rounded bg-purple-500"
                       initial={false}
                       transition={{
                         type: "spring",
@@ -147,12 +147,12 @@ export default function Navbar() {
             })}
           </ul>
 
-          <div className="flex items-center gap-2 border rounded-2xl px-2 border-slate-200 dark:border-slate-800">
+          <div className="flex items-center gap-2 border rounded px-2 border-slate-200 dark:border-slate-800">
             <button
               onClick={() =>
                 setTheme(resolvedTheme === "dark" ? "light" : "dark")
               }
-              className="rounded-lg p-2 text-slate-900 dark:text-white flex items-center gap-2"
+              className="rounded p-2 text-slate-900 dark:text-white flex items-center gap-2"
             >
               {mounted ? (
                 resolvedTheme === "dark" ? (
@@ -201,7 +201,7 @@ export default function Navbar() {
               <div className="flex justify-end mb-8">
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="p-2 text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors"
+                  className="p-2 text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded transition-colors"
                 >
                   <X size={28} />
                 </button>

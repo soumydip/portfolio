@@ -56,7 +56,7 @@ export default function Education() {
             className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white relative group inline-block cursor-default"
           >
             Educa<span className="text-purple-600">tion</span>
-            <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 h-0.75 w-1/2 bg-purple-500 rounded-full transition-all duration-500 group-hover:w-full shadow-[0_0_10px_rgba(168,85,247,0.5)]" />
+            <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 h-0.75 w-1/2 bg-purple-500 rounded transition-all duration-500 group-hover:w-full shadow-[0_0_10px_rgba(168,85,247,0.5)]" />
           </motion.h2>
         </div>
 
@@ -74,18 +74,18 @@ export default function Education() {
               }}
               className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full border-4 border-white dark:border-slate-950 bg-slate-100 dark:bg-slate-900 shadow-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-transform duration-300 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white group-hover:border-purple-200 dark:group-hover:border-purple-900">
+              <div className="flex items-center justify-center w-12 h-12 rounded border-4 border-white dark:border-slate-950 bg-slate-100 dark:bg-slate-900 shadow-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-transform duration-300 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white group-hover:border-purple-200 dark:group-hover:border-purple-900">
                 <div className="text-purple-600 group-hover:text-white transition-colors">
                   {edu.icon}
                 </div>
               </div>
 
-              <div className="w-[calc(100%-4rem)] md:w-[45%] p-6 md:p-8 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-xl shadow-sm hover:shadow-purple-500/10 hover:border-purple-500/50 transition-all duration-500">
+              <div className="w-[calc(100%-4rem)] md:w-[45%] p-6 md:p-8 rounded border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-xl shadow-sm hover:shadow-purple-500/10 hover:border-purple-500/50 transition-all duration-500">
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
-                  <span className="text-xs font-bold text-purple-600 flex items-center gap-1.5 bg-purple-50 dark:bg-purple-900/20 px-3 py-1 rounded-full">
+                  <span className="text-xs font-bold text-purple-600 flex items-center gap-1.5 bg-purple-50 dark:bg-purple-900/20 px-3 py-1 rounded">
                     <Calendar size={14} /> {edu.duration}
                   </span>
-                  <div className="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-[10px] font-black tracking-tight border border-slate-200 dark:border-slate-700">
+                  <div className="px-3 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-[10px] font-black tracking-tight border border-slate-200 dark:border-slate-700">
                     {edu.result}
                   </div>
                 </div>

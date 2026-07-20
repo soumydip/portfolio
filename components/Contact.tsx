@@ -57,7 +57,7 @@ export default function Contact() {
             className="text-4xl font-extrabold text-slate-900 dark:text-white mb-6 relative group inline-block pb-3"
           >
             Let&apos;s <span className="text-purple-600">Connect</span>
-            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 w-1/2 bg-purple-500 rounded-full transition-all duration-500 group-hover:w-full" />
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 w-1/2 bg-purple-500 rounded transition-all duration-500 group-hover:w-full" />
           </motion.h2>
           <p className="text-slate-600 dark:text-slate-400 text-lg">
             I&apos;m open to new opportunities. Reach out through any platform!
@@ -76,7 +76,7 @@ export default function Contact() {
               transition={{ delay: i * 0.05 }}
               className={`flex items-center justify-center gap-3 text-slate-500 transition-all group ${social.color}`}
             >
-              <span className="p-3 rounded-full bg-slate-100 dark:bg-slate-900 group-hover:bg-purple-100 dark:group-hover:bg-purple-900/30 transition-colors">
+              <span className="p-3 rounded bg-slate-100 dark:bg-slate-900 group-hover:bg-purple-100 dark:group-hover:bg-purple-900/30 transition-colors">
                 {social.icon}
               </span>
               <div className="flex flex-col items-start">
