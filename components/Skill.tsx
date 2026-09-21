@@ -23,6 +23,16 @@ const skills = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     desc: "Core language for building interactive and dynamic web applications.",
   },
+  {
+    name: "Python",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    desc: "Scripting, automation, and backend development with a versatile language.",
+  },
+  {
+    name: "Go",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
+    desc: "Developing high-performance backend services with concurrency support.",
+  },
 
   // Frontend
   {
@@ -36,6 +46,21 @@ const skills = [
     desc: "Building component-based UIs with efficient state management.",
   },
   {
+    name: "React Query",
+    logo: "https://cdn.jsdelivr.net/gh/pheralb/svgl@main/static/library/reactquery.svg",
+    desc: "Powerful asynchronous state management, data fetching, and caching.",
+  },
+  {
+    name: "Framer Motion",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg",
+    desc: "Creating smooth, interactive animations and transitions for web apps.",
+  },
+  {
+    name: "Zustand",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/zustand/zustand-original.svg",
+    desc: "Simple, fast, and scalable state management for React applications.",
+  },
+  {
     name: "Tailwind CSS",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     desc: "Crafting modern, responsive designs with utility-first CSS.",
@@ -47,7 +72,11 @@ const skills = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     desc: "Powering server-side applications with fast, scalable execution.",
   },
-
+  {
+    name: "Express.js",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    desc: "Building RESTful APIs and web applications with minimal overhead.",
+  },
 
   // Databases
   {
@@ -57,7 +86,7 @@ const skills = [
   },
   {
     name: "Supabase",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
     desc: "Building scalable backends with auth, real-time DB and storage.",
   },
   {
@@ -71,19 +100,12 @@ const skills = [
     desc: "High-performance caching, session management and job queue systems.",
   },
 
-  // Infrastructure
-
+  // Infrastructure & Tools
   {
-    name: "BullMQ",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
-    desc: "Implementing robust job queues and background processing for scalable applications.",
-  },
-  {
-    name: "WebSockets",
+    name: "Socket.IO",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
-    desc: "Enabling real-time, bidirectional communication for live features.",
+    desc: "Enabling real-time, bidirectional communication for live web applications.",
   },
-  // Tools
   {
     name: "Git & GitHub",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
@@ -121,7 +143,7 @@ export default function Skills() {
             className="text-4xl font-bold text-slate-900 dark:text-white relative group cursor-default"
           >
             Technical <span className="text-purple-600">Expertise</span>
-            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-0.75 w-1/2 bg-purple-500 rounded transition-all duration-500 group-hover:w-full" />
+            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-1 w-1/2 bg-purple-500 rounded transition-all duration-500 group-hover:w-full" />
           </motion.h2>
         </div>
 
@@ -137,10 +159,10 @@ export default function Skills() {
                   key={index}
                   className="pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
                 >
-                  {/* --- Hover Card Container --- */}
-                  <div className="group flex flex-col items-center text-center p-8 rounded h-75 border border-slate-200 dark:border-slate-800 transition-all duration-500 bg-slate-200 dark:bg-slate-900/50 hover:bg-purple-400  dark:hover:bg-purple-700 hover:shadow-2xl hover:shadow-purple-500/40 hover:border-transparent">
+                  {/* Hover Card Container */}
+                  <div className="group flex flex-col items-center text-center p-6 rounded-2xl h-72 border border-slate-200 dark:border-slate-800 transition-all duration-500 bg-slate-200 dark:bg-slate-900/50 hover:bg-purple-400  dark:hover:bg-purple-700 hover:shadow-2xl hover:shadow-purple-500/40 hover:border-transparent">
                     {/* Logo Section */}
-                    <div className="relative w-16 h-16 mb-6 transition-all duration-500 group-hover:scale-110 ">
+                    <div className="relative w-16 h-16 mb-6 transition-all duration-500 group-hover:scale-110">
                       <Image
                         src={skill.logo}
                         alt={skill.name}

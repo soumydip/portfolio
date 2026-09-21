@@ -28,12 +28,13 @@ export default function NpmSection() {
 
   const tags = [
     "Page views",
-    "Error tracking",
+    "Error tracking & management",
     "Custom events",
-    "Core Web Vitals",
     "SPA support",
     "Cookie-free",
     "AI Bot detection",
+    "Funnel analysis",
+    "GDPR compliant",
   ];
 
   return (
@@ -68,7 +69,6 @@ export default function NpmSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        {/* Linear Style Card: Glassmorphism + Subtle Borders */}
         <div className="bg-white/50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/[0.08] hover:dark:border-white/[0.15] backdrop-blur-xl rounded overflow-hidden transition-colors duration-500 shadow-xl shadow-slate-200/20 dark:shadow-none">
           {/* Header */}
           <div className="px-5 py-4 flex items-center justify-between gap-3 flex-wrap border-b border-slate-200 dark:border-white/[0.05]">
@@ -93,10 +93,9 @@ export default function NpmSection() {
                     ucoder-insight
                   </h3>
                   <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-500/10 dark:text-blue-400 border border-blue-200 dark:border-blue-500/20">
-                    v1.1.3
+                    v1.1.5
                   </span>
                 </div>
-                {/* Live pulsing indicator */}
                 <div className="flex items-center gap-1.5 mt-1">
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded bg-emerald-400 opacity-75"></span>
@@ -196,7 +195,7 @@ export default function NpmSection() {
 
         <div className="flex items-center justify-between mt-4 px-2 text-xs font-medium text-slate-500 dark:text-slate-400">
           <p>Used in production at ucoder.in</p>
-          <p>~7.4KB gzipped · 0 Dependencies</p>
+          <p>~8.75KB gzipped · 0 Dependencies</p>
         </div>
       </motion.section>
     </section>

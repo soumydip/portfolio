@@ -40,7 +40,7 @@ export default function About() {
           <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
             My journey into web development started with curiosity about how
             digital systems work. Over time, that curiosity evolved into a focus
-            on building production-grade applications using
+            on building production-grade applications using{" "}
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
               TypeScript
             </span>
@@ -56,9 +56,13 @@ export default function About() {
           </p>
 
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-            I focus on clean architecture and scalability — working with
+            I focus on clean architecture and scalability - working with
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
               Supabase
+            </span>
+            ,
+            <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
+              Go
             </span>
             ,
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
@@ -71,17 +75,23 @@ export default function About() {
             for real-world backend systems. I&#39;ve shipped apps to production,
             including
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400 hover:underline ">
-              <Link href="https://www.ucoder.in?utm_source=soumyadip_portfoilo&utm_medium=referral" target="_blank">
+              <Link
+                href="https://www.ucoder.in?utm_source=soumyadip_portfoilo&utm_medium=referral"
+                target="_blank"
+              >
                 Ucoder
               </Link>
             </span>
             and
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400 hover:underline ">
-              <Link href="https://insights.ucoder.in?utm_source=soumyadip_portfoilo&utm_medium=referral" target="_blank">
+              <Link
+                href="https://insights.ucoder.in?utm_source=soumyadip_portfoilo&utm_medium=referral"
+                target="_blank"
+              >
                 Ucoder Insights
               </Link>
             </span>
-            — an analytics platform with its own
+            - a modern analytics platform with its own
             <span className="font-medium mx-1.5 text-purple-600 dark:text-purple-400">
               npm SDK
             </span>

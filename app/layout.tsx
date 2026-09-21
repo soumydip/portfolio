@@ -23,12 +23,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://soumyadip.ucoder.in/"),
   title: {
-    default: "Soumyadip Maity | Full Stack Developer & AI Enthusiast",
+    default: "Soumyadip Maity | Full Stack Developer",
     template: "%s | Soumyadip Maity",
   },
 
   description:
-    "Soumyadip Maity - Full Stack Developer crafting scalable web applications with MERN Stack, Next.js & AI. Available for freelance projects.",
+    "Soumyadip Maity - Full Stack Developer crafting scalable web applications with MERN Stack, Next.js . Available for freelance projects.",
 
   keywords: [
     "Soumyadip Maity",
@@ -40,12 +40,12 @@ export const metadata: Metadata = {
     "React Developer",
     "Next.js Developer",
     "Node.js Developer",
+    "Go Developer",
     "TypeScript Developer",
     "MongoDB Developer",
     "Express.js Developer",
     "Typescript Developer",
     "Freelance Web Developer",
-    "AI Solutions Developer",
     "Software Engineer",
   ],
 
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
     siteName: "Soumyadip Maity Portfolio",
     images: [
       {
-        url: "https://res.cloudinary.com/dkqi9h8yw/image/upload/v1768277924/qcywx8qervf0iirwbmvu.png",
+        url: "/logo.jpeg",
         width: 1200,
         height: 630,
         alt: "Soumyadip Maity - Full Stack Developer Portfolio",
@@ -115,10 +115,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Soumyadip Maity | Full Stack Developer",
     description:
-      "Crafting scalable web apps with MERN Stack, Next.js & Typescript. View my projects →",
-    images: [
-      "https://res.cloudinary.com/dkqi9h8yw/image/upload/v1768277924/qcywx8qervf0iirwbmvu.png",
-    ],
+      "Crafting scalable web apps with MERN Stack, Next.js & Typescript. View my projects and portfolio at soumyadip.ucoder.in.",
+    images: ["/logo.jpeg"],
     creator: "@soumyadip2maity",
     site: "@soumyadip2maity",
   },

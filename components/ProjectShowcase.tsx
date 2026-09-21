@@ -66,6 +66,15 @@ const projects = [
     image: Portfolio,
   },
   {
+    title: "Notes App",
+    description:
+      "A simple and intuitive web application for creating, managing, and organizing notes. It features a clean user interface and supports local storage for offline access.",
+    tech: ["React", "Go", "JavaScript", "CSS", "node.js"],
+    github: "https://github.com/soumydip/inotebook-client",
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173",
+    live: "",
+  },
+  {
     title: "Placement Prediction",
     description:
       "ML-powered web app predicting student placement outcomes " +
@@ -100,9 +109,9 @@ export default function StackedProjects() {
 
   return (
     <section
-  id="projects"
-  className="py-20 px-4 dark:bg-slate-950 overflow-hidden transition-all duration-500 max-w-full"
->
+      id="projects"
+      className="py-20 px-4 dark:bg-slate-950 overflow-hidden transition-all duration-500 max-w-full"
+    >
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <div className="text-center mb-12 md:mb-16">
           <motion.h2
