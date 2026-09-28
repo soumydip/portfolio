@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Soumyadip Maity - Full Stack Developer crafting scalable web applications with MERN Stack, Next.js . Available for freelance projects.",
+    "Soumyadip Maity - Full Stack Developer crafting scalable web applications with MERN Stack, Next.js and Go language . Available for freelance projects.",
 
   keywords: [
     "Soumyadip Maity",
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
     siteName: "Soumyadip Maity Portfolio",
     images: [
       {
-        url: "/logo.jpeg",
+        url: "https://res.cloudinary.com/dkqi9h8yw/image/upload/g2r0tst8f3wonjxlzlpc.jpg",
         width: 1200,
         height: 630,
         alt: "Soumyadip Maity - Full Stack Developer Portfolio",
@@ -116,7 +116,9 @@ export const metadata: Metadata = {
     title: "Soumyadip Maity | Full Stack Developer",
     description:
       "Crafting scalable web apps with MERN Stack, Next.js & Typescript. View my projects and portfolio at soumyadip.ucoder.in.",
-    images: ["/logo.jpeg"],
+    images: [
+      "https://res.cloudinary.com/dkqi9h8yw/image/upload/g2r0tst8f3wonjxlzlpc.jpg",
+    ],
     creator: "@soumyadip2maity",
     site: "@soumyadip2maity",
   },

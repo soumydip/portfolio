@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { CheckCircle2, XCircle, Loader2, Send } from "lucide-react";
-// সঠিক ফাইল থেকে ইমপোর্ট করুন (যেখানে সার্ভার অ্যাকশন রেখেছেন)
 import { sendContact, type FormState } from "@/app/actions/contact"; 
 
 const initialState: FormState = {

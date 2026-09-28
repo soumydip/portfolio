@@ -9,6 +9,7 @@ import {
   Zap,
   Activity,
 } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function NpmSection() {
@@ -73,18 +74,14 @@ export default function NpmSection() {
           {/* Header */}
           <div className="px-5 py-4 flex items-center justify-between gap-3 flex-wrap border-b border-slate-200 dark:border-white/[0.05]">
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 rounded bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center border border-blue-500/20">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="text-blue-500 dark:text-blue-400"
-                >
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                </svg>
+              <div className="w-10 h-10 rounded flex items-center justify-center">
+                <Image
+                  src="/ucoder_insights.png"
+                  alt="Ucoder Insight"
+                  width={40}
+                  height={40}
+                  loading="lazy"
+                />
               </div>
 
               <div className="flex flex-col">
@@ -152,9 +149,9 @@ export default function NpmSection() {
             </div>
 
             <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              High-throughput, cookie-free analytics SDK. Built with zero
-              dependencies to track page views, custom events, and Core Web
-              Vitals in real-time without compromising user privacy.
+              High-throughput, cookie-free analytics SDK. Built from scratch
+              with zero dependencies to track page views, custom events, and
+              Core Web Vitals in real-time without compromising user privacy.
             </p>
 
             {/* Tags */}

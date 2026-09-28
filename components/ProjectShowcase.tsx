@@ -66,10 +66,19 @@ const projects = [
     image: Portfolio,
   },
   {
+    title: "Queue Management System",
+    description:
+      "A Go lang base queue management system for manage task processing in a distributed environment. Run multiple workers to process tasks concurrently and efficiently without race conditions using Go channels and mutexes.",
+    tech: ["Go", "Gin", "Go channels", "Mutexes"],
+    github: "https://github.com/soumydip/go-queue",
+    live: "",
+    image: "https://images.unsplash.com/photo-1516387938699-a93567ec168e",
+  },
+  {
     title: "Notes App",
     description:
       "A simple and intuitive web application for creating, managing, and organizing notes. It features a clean user interface and supports local storage for offline access.",
-    tech: ["React", "Go", "JavaScript", "CSS", "node.js"],
+    tech: ["React", "Go", "Gin", "JavaScript", "MongoDB", "node.js"],
     github: "https://github.com/soumydip/inotebook-client",
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173",
     live: "",

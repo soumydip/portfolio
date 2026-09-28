@@ -7,10 +7,10 @@ export function StructuredData() {
       name: "Soumyadip Maity",
       url: "https://soumyadip.ucoder.in/",
       image:
-        "https://res.cloudinary.com/dkqi9h8yw/image/upload/v1768277924/qcywx8qervf0iirwbmvu.png",
+        "https://res.cloudinary.com/dkqi9h8yw/image/upload/g2r0tst8f3wonjxlzlpc.jpg",
       sameAs: [
         "https://www.ucoder.in",
-        "https://www.github.com/soumydip",
+        "https://github.com/soumydip",
         "https://insights.ucoder.in",
         "https://www.linkedin.com/in/soumyadip-maity-183ba3310",
         "https://twitter.com/soumyadip2maity",
@@ -19,12 +19,12 @@ export function StructuredData() {
       ],
       jobTitle: "Full Stack Developer",
       description:
-        "Full Stack Developer specializing in MERN stack, Next.js, Typescript and AI solutions.",
+        "Full Stack Developer specializing in MERN stack, Next.js, Typescript.",
       worksFor: {
         "@id": "https://insights.ucoder.in/#organization",
       },
       brand: {
-        "@id": "https://insights.ucoder.in/#organization", 
+        "@id": "https://insights.ucoder.in/#organization",
       },
       alumniOf: {
         "@type": "CollegeOrUniversity",
@@ -36,6 +36,7 @@ export function StructuredData() {
         "MERN Stack",
         "Next.js",
         "React.js",
+        "Go Programming",
         "Node.js",
         "Python",
         "Artificial Intelligence",
@@ -76,9 +77,7 @@ export function StructuredData() {
       author: {
         "@id": "https://soumyadip.ucoder.in/#person",
       },
-      sameAs: [
-        "https://www.npmjs.com/package/ucoder-insight" 
-      ]
+      sameAs: ["https://www.npmjs.com/package/ucoder-insight"],
     },
     {
       "@context": "https://schema.org",
@@ -87,26 +86,28 @@ export function StructuredData() {
       name: "Soumyadip Maity - Portfolio",
       url: "https://soumyadip.ucoder.in/",
       description:
-        "Soumyadip Maity is a Full Stack Developer specializing in MERN stack, Next.js, Typescript and AI solutions.",
+        "Soumyadip Maity is a Full Stack Developer specializing in MERN stack, Next.js,Go, Node.js, Python, Typescript and AI solutions.",
       author: {
         "@id": "https://soumyadip.ucoder.in/#person",
       },
       publisher: {
         "@id": "https://soumyadip.ucoder.in/#person",
-      }
+      },
     },
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "@id": "https://insights.ucoder.in/#organization", 
+      "@id": "https://insights.ucoder.in/#organization",
       name: "Ucoder",
       url: "https://insights.ucoder.in",
-      logo: "https://res.cloudinary.com/dkqi9h8yw/image/upload/v1768277924/qcywx8qervf0iirwbmvu.png",
-      sameAs: [
-        "https://www.ucoder.in",
-        "https://www.github.com/soumydip",
-        "https://insights.ucoder.in",
-      ],
+      logo: "https://www.ucoder.in/logo.png",
+      sameAs: ["https://www.ucoder.in", "https://insights.ucoder.in"],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        ratingCount: "4",
+        url: "https://www.trustpilot.com/review/ucoder.in",
+      },
       contactPoint: {
         "@type": "ContactPoint",
         contactType: "Customer Support",
